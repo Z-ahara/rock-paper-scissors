@@ -52,25 +52,22 @@ function playRound (playerSelection, computerSelection) {
 }
 
 // plays a five-round game
-function game() {
-    if (computerScore == 5) {
-        console.log("Computer wins!")
-    } else if (playerScore == 5) {
-        console.log("Player wins!")
-    }
+// function game() {
+//     if (computerScore == 5) {
+//         console.log("Computer wins!")
+//     } else if (playerScore == 5) {
+//         console.log("Player wins!")
+//     }
 
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
+//     playRound(playerSelection, computerSelection)
+//     playRound(playerSelection, computerSelection)
+//     playRound(playerSelection, computerSelection)
+//     playRound(playerSelection, computerSelection)
+//     playRound(playerSelection, computerSelection)
 
-}
+// }
 
 const playerSelection = ("Rock, paper, or scissors?")
 const computerSelection = getComputerChoice()
 
-console.log("The computer chose: " + computerSelection)
-prompt("Rock, paper, or scissors?")
 console.log(playRound(playerSelection, computerSelection))
-game()
